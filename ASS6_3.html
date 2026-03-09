@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Color Change Challenge</title>
+	<script>
+		function changeBackground(color) {
+		const confirmation = confirm('Do you really want to change the background color to color?');
+		if (confirmation) {
+			document.body.style.backgroundColor = color;
+		}
+	}
+	</script>
+</head>
+<body>
+    <h3>Click a button to change the background color</h3>
+    <button class="red-btn" onclick="changeBackground('red')">Red</button>
+    <button class="green-btn" onclick="changeBackground('green')">Green</button>
+    <button class="blue-btn" onclick="changeBackground('blue')">Blue</button>
+</body>
+</html>
