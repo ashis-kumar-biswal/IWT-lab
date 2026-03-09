@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>paragraph toggle</title> 
+	<script>
+	   function visibilty(){
+            const p = document.getElementById("togglePara");
+            if (p.style.display === "none") {
+				p.style.display = "block";
+			} else {
+				p.style.display = "none";
+			}
+		}
+	</script>
+</head>
+<body>
+    <section>
+        <p id="togglePara">The morning sun filtered through the tall trees, scattering golden light across the forest floor. Birds called to one another in a lively chorus, while a gentle breeze carried the scent of damp earth and wildflowers. A narrow path wound its way between moss-covered stones, inviting anyone who stumbled upon it to wander deeper into the quiet mystery of the woods.
+		It felt like a place where time slowed down, where every step revealed something new yet timeless.</p>
+        <button onclick="visibilty()">toggle</button>
+    </section>
+</body>
+</html>
