@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Counter</title>
+	<script>
+		var count=0;
+		function decrease() {
+			if(count==1) {
+				doucument.write("can't be decreased");
+				const p = document.getElementById("counter");
+				p.value="error";
+			}
+			else{
+				count=count-1;
+				const p = document.getElementById("counter");
+				p.value=count;
+			}
+		}
+		function increase(){
+			count=count+1;
+			const p = document.getElementById("counter");
+			p.value=count;
+		}
+	</script>
+</head>
+<body>
+	<h2>Counter</h2>
+	<input type="text" id="counter" value="0" readonly>
+	<br><br>
+	<button onclick="increase()">+</button>
+	<button onclick="decrease()">-</button>
+</body>
+</html>
